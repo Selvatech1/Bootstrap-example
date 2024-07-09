@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for styling */
+        body {
+            background-color: rgb(243, 247, 248), 207, 207);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #b66565;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(182, 146, 146, 0.2);
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .custom-control-label::before {
+            border: 1px solid #00ff1e;
+        }
+
+        .custom-control-label::after {
+            background-color: #007bff;
+        }
+
+        select.form-control {
+            width: 100%;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: burlywood;">Survey Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label>Which programming languages do you know?</label>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="html">
+                    <label class="custom-control-label" for="html">HTML</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="css">
+                    <label class="custom-control-label" for="css">CSS</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="js">
+                    <label class="custom-control-label" for="js">JavaScript</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="experience">Years of experience:</label>
+                <select class="form-control" id="experience">
+                    <option>Less than 1 year</option>
+                    <option>1-3 years</option>
+                    <option>3-5 years</option>
+                    <option>More than 5 years</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
